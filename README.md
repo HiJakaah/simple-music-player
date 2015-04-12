@@ -1,11 +1,3 @@
-# ![icon](https://raw.github.com/punker76/simple-music-player/master/icon/Gramaphone48x48.png) Simple Music Player
-
-[![Build status](https://ci.appveyor.com/api/projects/status/kvdccylonj7qjnkw/branch/master?svg=true)](https://ci.appveyor.com/project/punker76/simple-music-player/branch/master)
-
-[![Gitter chat](https://badges.gitter.im/punker76/simple-music-player.png)](https://gitter.im/punker76/simple-music-player)
-
-This is the next version of simple music player ([SimpleMP](http://jkarger.de/simple-music-player/))
-
 **SimpleMP** or **Simple Music Player** is a simple and easy to use music player for free. It plays the most common music files (mp3, ogg, wma, wav) in a simple way.
 
 Why another music player? When I decided to make my first player back in 2005, the Winamp 3 player was to buggy and very slow! I stopped developing in 2007.
@@ -46,8 +38,8 @@ It's not perfect and many function not yet implemented.
 
 ## Download
 
-- [v1.9.0.13](https://github.com/punker76/simple-music-player/releases/tag/v1.9.0.13)
-- [v1.9.0.14](https://github.com/punker76/simple-music-player/releases/tag/v1.9.0.14)
+- [v1.9.0.13](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.13)
+- [v1.9.0.14](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.14)
 
 ## Libs that I used
 
@@ -72,35 +64,35 @@ Most Icons are taken (inspired) from (thx @Templarian)
 
 ## Screen shots (milestones)
 
-![very early screenshot 15](https://raw.github.com/punker76/simple-music-player/master/screenshots/2014-11-02_12h11_31.png)  
+![very early screenshot 15](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2014-11-02_12h11_31.png)  
 
-![very early screenshot 14](https://raw.github.com/punker76/simple-music-player/master/screenshots/2014-07-14_22h42_19.png)  
+![very early screenshot 14](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2014-07-14_22h42_19.png)  
 
-![very early screenshot 13](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-11-26_20h58_04.png)  
+![very early screenshot 13](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-11-26_20h58_04.png)  
 
-![very early screenshot 12](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-11-26_20h58_17.png)  
+![very early screenshot 12](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-11-26_20h58_17.png)  
 
-![very early screenshot 11](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-11-10_23h42_10.png)  
+![very early screenshot 11](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-11-10_23h42_10.png)  
 
-![very early screenshot 10](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-11-10_23h42_24.png)  
+![very early screenshot 10](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-11-10_23h42_24.png)  
 
-![very early screenshot 09](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-09-16_09h40_08.png)  
+![very early screenshot 09](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-09-16_09h40_08.png)  
 
-![very early screenshot 08](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-09-16_09h40_02.png)  
+![very early screenshot 08](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-09-16_09h40_02.png)  
 
-![very early screenshot 07](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-02-07_22h49_52.png)  
+![very early screenshot 07](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-02-07_22h49_52.png)  
 
-![very early screenshot 06](https://raw.github.com/punker76/simple-music-player/master/screenshots/2013-01-05_23h26_18.png)  
+![very early screenshot 06](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2013-01-05_23h26_18.png)  
 
-![very early screenshot 05](https://raw.github.com/punker76/simple-music-player/master/screenshots/2012-12-19_21h55_18.png)  
+![very early screenshot 05](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2012-12-19_21h55_18.png)  
 
-![very early screenshot 04](https://raw.github.com/punker76/simple-music-player/master/screenshots/2012-12-19_21h54_53.png)  
+![very early screenshot 04](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2012-12-19_21h54_53.png)  
 
-![very early screenshot 03](https://raw.github.com/punker76/simple-music-player/master/screenshots/2012-12-19_14h48_05.png)  
+![very early screenshot 03](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2012-12-19_14h48_05.png)  
 
-![very early screenshot 02](https://raw.github.com/punker76/simple-music-player/master/screenshots/2012-12-16_17h14_57.png)  
+![very early screenshot 02](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2012-12-16_17h14_57.png)  
 
-![very early screenshot 01](https://raw.github.com/punker76/simple-music-player/master/screenshots/2012-12-13_23h14_25.png)  
+![very early screenshot 01](https://raw.github.com/HiJakaah/simple-music-player/master/screenshots/2012-12-13_23h14_25.png)  
 
 ## License and copyright
 
