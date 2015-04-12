@@ -68,7 +68,7 @@ namespace SimpleMusicPlayer.ViewModels
 
         private void ShowOnGitHub()
         {
-            System.Diagnostics.Process.Start("https://github.com/punker76/simple-music-player");
+            System.Diagnostics.Process.Start("https://github.com/HiJakaah/simple-music-player");
         }
 
         public void ShutDown()
