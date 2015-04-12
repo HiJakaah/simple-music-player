@@ -36,10 +36,7 @@ It's not perfect and many function not yet implemented.
 	+ if you link with supported media files, the player loads the new files and play the first file from the added files
 + Tooltip on playlist files
 
-## Download
 
-- [v1.9.0.13](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.13)
-- [v1.9.0.14](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.14)
 
 ## Libs that I used
 
