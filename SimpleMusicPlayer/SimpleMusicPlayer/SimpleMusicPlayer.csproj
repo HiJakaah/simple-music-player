@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06E30367-00AC-4FC1-8A4F-13A98CBD441D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimpleMusicPlayer</RootNamespace>
+    <AssemblyName>SimpleMusicPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WIN64</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WIN64</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug_x86\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\bin\Release_x86\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SimpleMusicPlayer.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>simplemp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\packages\gong-wpf-dragdrop.0.1.4.3\lib\net40\GongSolutions.Wpf.DragDrop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro.SimpleChildWindow">
+      <HintPath>..\packages\MahApps.Metro.SimpleChildWindow.1.1.0.0\lib\net45\MahApps.Metro.SimpleChildWindow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Windows API Code Pack 1.1\Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Windows API Code Pack 1.1\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.6.4.0.1\lib\Net45\ReactiveUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ReactiveUI.Events">
+      <HintPath>..\packages\reactiveui-events.6.4.0.1\lib\net45\ReactiveUI.Events.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SchwabenCode.QuickIO">
+      <HintPath>..\packages\QuickIO.NET.2.6.2.0\lib\net45\SchwabenCode.QuickIO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.0\lib\Net45\Splat.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+      <HintPath>..\packages\Rx-XAML.2.2.5\lib\net45\System.Reactive.Windows.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="taglib-sharp">
+      <HintPath>..\libs\taglib-sharp\taglib-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="..\libs\FMODStudio\csharp\fmod.cs">
+      <Link>FMODStudio\fmod.cs</Link>
+    </Compile>
+    <Compile Include="..\libs\FMODStudio\csharp\fmod_dsp.cs">
+      <Link>FMODStudio\fmod_dsp.cs</Link>
+    </Compile>
+    <Compile Include="..\libs\FMODStudio\csharp\fmod_errors.cs">
+      <Link>FMODStudio\fmod_errors.cs</Link>
+    </Compile>
+    <Compile Include="Core\AppHelper.cs" />
+    <Compile Include="Core\AssemblyExtensions.cs" />
+    <Compile Include="Core\AttachedCommandBehavior.cs" />
+    <Compile Include="Core\BaseListBox.cs" />
+    <Compile Include="Core\BaseListView.cs" />
+    <Compile Include="Core\DelegateCommand.cs" />
+    <Compile Include="Core\ExceptionExtensions.cs" />
+    <Compile Include="Core\FolderBrowserHelper.cs" />
+    <Compile Include="Core\FormattedSlider.cs" />
+    <Compile Include="Core\KeyHandlerExtensions.cs" />
+    <Compile Include="Core\NLogLogger.cs" />
+    <Compile Include="Core\Player\ChannelInfo.cs" />
+    <Compile Include="Core\Player\EqualizerBand.cs" />
+    <Compile Include="Core\SelectorHelper.cs" />
+    <Compile Include="Core\QuickFillObservableCollection.cs" />
+    <Compile Include="Core\SprocketControl.cs" />
+    <Compile Include="Core\ToolTipHelper.cs" />
+    <Compile Include="Core\VisualExtensions.cs" />
+    <Compile Include="Core\WindowExtensions.cs" />
+    <Compile Include="Behavior\IListItemConverter.cs" />
+    <Compile Include="Behavior\MultiSelectorBehaviours.cs" />
+    <Compile Include="Behavior\TwoListSynchronizer.cs" />
+    <Compile Include="Core\CustomWindowPlacementSettings.cs" />
+    <Compile Include="Core\Enums.cs" />
+    <Compile Include="Core\Player\Equalizer.cs" />
+    <Compile Include="Core\FileSearchWorker.cs" />
+    <Compile Include="Core\Interfaces\IPlayerEngine.cs" />
+    <Compile Include="Core\MedialibCollection.cs" />
+    <Compile Include="Core\Player\PlayerEngine.cs" />
+    <Compile Include="Core\PlayList.cs" />
+    <Compile Include="Core\PlayListCollection.cs" />
+    <Compile Include="Core\Player\PlayerSettings.cs" />
+    <Compile Include="FMODStudio\FMODExtensions.cs" />
+    <Compile Include="Core\Interfaces\IKeyHandler.cs" />
+    <Compile Include="Core\Interfaces\IMediaFile.cs" />
+    <Compile Include="Core\Interfaces\IWindowPlacementSetting.cs" />
+    <Compile Include="Microsoft.Shell\SingleInstance.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="TinyIoC.cs" />
+    <Compile Include="ValueConverters\EnumToBoolConverter.cs" />
+    <Compile Include="ValueConverters\EnumToVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\FalseToCollapsedVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\SizeConverter.cs" />
+    <Compile Include="ValueConverters\ModeToColorConverter.cs" />
+    <Compile Include="ValueConverters\NullToCollapsedVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\PlayerMuteToVisualBrushConverter.cs" />
+    <Compile Include="ValueConverters\PlayerStateToToolTipConverter.cs" />
+    <Compile Include="ValueConverters\SliderPositionValueToTextConverter.cs" />
+    <Compile Include="ValueConverters\SliderRemainingPositionValueToTextConverter.cs" />
+    <Compile Include="ViewModels\EqualizerViewModel.cs" />
+    <Compile Include="ViewModels\PlayControlInfoViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Core\MediaFile.cs" />
+    <Compile Include="ViewModels\MedialibViewModel.cs" />
+    <Compile Include="ViewModels\PlayControlViewModel.cs" />
+    <Compile Include="ViewModels\PlaylistsViewModel.cs" />
+    <Compile Include="Views\EqualizerView.xaml.cs">
+      <DependentUpon>EqualizerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayControlInfoView.xaml.cs">
+      <DependentUpon>PlayControlInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MediaFileTransitioningContentControl.xaml.cs">
+      <DependentUpon>MediaFileTransitioningContentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MedialibView.xaml.cs">
+      <DependentUpon>MedialibView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayControlView.xaml.cs">
+      <DependentUpon>PlayControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlaylistsView.xaml.cs">
+      <DependentUpon>PlaylistsView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Resources\Controls.CustomSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls.Tooltip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EqualizerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayControlInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\Controls.BaseListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Controls.BaseListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Controls.Slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MediaFileTransitioningContentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MedialibView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlaylistsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <AppDesigner Include="Properties\" />
+    <None Include="settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\libs\taglib-sharp\taglib-sharp.dll">
+      <Link>DllsAsResource\taglib-sharp.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\libs\Windows API Code Pack 1.1\Microsoft.WindowsAPICodePack.dll">
+      <Link>DllsAsResource\Microsoft.WindowsAPICodePack.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\libs\Windows API Code Pack 1.1\Microsoft.WindowsAPICodePack.Shell.dll">
+      <Link>DllsAsResource\Microsoft.WindowsAPICodePack.Shell.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="simplemp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\FMODStudio\fmod.dll" Condition="'$(Configuration)|$(Platform)' == 'Debug|x86' or '$(Configuration)|$(Platform)' == 'Release|x86'">
+      <Link>fmod.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\libs\FMODStudio\fmod64.dll" Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU' or '$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+      <Link>fmod64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\gong-wpf-dragdrop.0.1.4.3\lib\net40\GongSolutions.Wpf.DragDrop.dll">
+      <Link>DllsAsResource\GongSolutions.Wpf.DragDrop.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll">
+      <Link>DllsAsResource\System.Reactive.Core.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll">
+      <Link>DllsAsResource\System.Reactive.Interfaces.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll">
+      <Link>DllsAsResource\System.Reactive.Linq.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll">
+      <Link>DllsAsResource\System.Reactive.PlatformServices.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Rx-Xaml.2.2.5\lib\net45\System.Reactive.Windows.Threading.dll">
+      <Link>DllsAsResource\System.Reactive.Windows.Threading.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll">
+      <Link>DllsAsResource\Newtonsoft.Json.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\NLog.3.2.0.0\lib\net45\NLog.dll">
+      <Link>DllsAsResource\NLog.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\reactiveui-core.6.4.0.1\lib\Net45\ReactiveUI.dll">
+      <Link>DllsAsResource\ReactiveUI.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\reactiveui-events.6.4.0.1\lib\net45\ReactiveUI.Events.dll">
+      <Link>DllsAsResource\ReactiveUI.Events.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Splat.1.6.0\lib\Net45\Splat.dll">
+      <Link>DllsAsResource\Splat.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\MahApps.Metro.SimpleChildWindow.1.1.0.0\lib\net45\MahApps.Metro.SimpleChildWindow.dll">
+      <Link>DllsAsResource\MahApps.Metro.SimpleChildWindow.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll">
+      <Link>DllsAsResource\MahApps.Metro.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll">
+      <Link>DllsAsResource\System.Windows.Interactivity.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\QuickIO.NET.2.6.2.0\lib\net45\SchwabenCode.QuickIO.dll">
+      <Link>DllsAsResource\SchwabenCode.QuickIO.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
