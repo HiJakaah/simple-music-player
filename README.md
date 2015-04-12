@@ -37,8 +37,7 @@ It's not perfect and many function not yet implemented.
 + Tooltip on playlist files
 
 ## Download
- 
-- [v1.9.0.13](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.13)
+
 - [v1.9.0.14](https://github.com/HiJakaah/simple-music-player/releases/tag/v1.9.0.14)
 
 
